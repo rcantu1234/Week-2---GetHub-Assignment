@@ -1,23 +1,42 @@
 .form-control {
-  width: 20em;
+  width: 15em;
   padding-top: .10em;
   top: 30px; }
 
-a {
-  margin: 45px; }
+.search {
+  position: relative;
+  margin-left: 100px;
+  margin-top: -29px;
+  margin-bottom: 15px;
+  clear: both;
+  float: left;
+  height: 30px; }
 
-.change {
-  list-style-type: none;
-  margin: auto;
-  font-size: 100%;
+.logo1 {
+  position: absolute;
+  float: left;
+  margin-left: 25px;
+  padding-top: 5px;
+  margin-top: -3px; }
+
+.list-padding li {
+  padding-top: px;
+  padding-bottom: 10px;
+  padding-right: -5px;
+  font-size: 13px;
+  display: inline;
+  height: 10px;
+  margin: 15px; }
+
+.logo2 {
+  display: inline;
   float: right;
-  margin: auto; }
+  padding-bottom: 50px; }
 
-.change li {
-  display: inline; }
+.list-padding li a {
+  color: black; }
 
-body {
-  margin: 0px;
-  padding: 0px; }
+li {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

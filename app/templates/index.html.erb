@@ -3,34 +3,33 @@
 	<head>
 		<link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet'>
 		<link href="css/style.css" rel='stylesheet'>
+		<link href="../octicons/octicons.css" rel="stylesheet">
 	</head>
 	<body>
 
 	<br />
 
-	<nav>
+	<nav class="nav_height" style="color: brown">
 	    <div>
-	    	<!-- <form> -->
+	    	<div class="image-format">
+			  	<a href="#"><span class="octicon octicon-clock"></span></a>
+  			  	<input type="email" class="form-control search" id="exampleInputEmail1" placeholder="Search GitHub">
+			</div>
+			  
+			  	
+
 			  	<div>
-			  	<table>
-				  	<tr border='1'>
-				  		<td><img src="" alt="github" style="float: left" height="33" /></td>
-				  		<td>
-					  	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search GitHub"></td>
-					<td style="display: inline">
-					    <ul class="change" style="float: right">
-					    	<li><a href="#">Explore</a></li>
-					    	<li><a href="#">Gist</a></li>
-					    	<li><a href="#">Blog</a></li>
-					    	<li><a href="#">Help</a></li>
-					    </ul>
-				    </td>
-				  	</tr>
+				    <ul class="list-padding">
+				    	<li><a href="#">Explore</a></li>
+				    	<li><a href="#">Gist</a></li>
+				    	<li><a href="#">Blog</a></li>
+				    	<li><a href="#">Help</a></li>
+				    </ul>
+		    	</div>
 
-
-				  </table>
-			  	</div>
-		    <!-- </form> -->
+		    	<div>
+		    		<a href="#"><img src="#" class="logo2" alt="logo2"></a>
+		    	</div>
 	  	</div>
 
 	</nav>
@@ -40,7 +39,7 @@
 
 			<h1>Hello <%= @profile_data['name'] %></h1>
 
-			<img src='<%= @profile_data["avatar_url"] %>' />
+			<img src='<%= @profile_data["avatar_url"] %>' width="<%= 200 %>" height="<% 200 %>" />
 
 			<ul>
 				<% @repos_data.each do |repo| %>
