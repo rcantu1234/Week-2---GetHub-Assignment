@@ -2,18 +2,51 @@
 <html>
 	<head>
 		<link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet'>
+		<link href="css/style.css" rel='stylesheet'>
 	</head>
 	<body>
 
-		<h1>Hello <%= @name %></h1>
+	<br />
 
-		<img src='<%= @profile_data["avatar_url"] %>' />
+	<nav>
+	    <div>
+	    	<!-- <form> -->
+			  	<div>
+			  	<table>
+				  	<tr border='1'>
+				  		<td><img src="" alt="github" style="float: left" height="33" /></td>
+				  		<td>
+					  	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search GitHub"></td>
+					<td style="display: inline">
+					    <ul class="change" style="float: right">
+					    	<li><a href="#">Explore</a></li>
+					    	<li><a href="#">Gist</a></li>
+					    	<li><a href="#">Blog</a></li>
+					    	<li><a href="#">Help</a></li>
+					    </ul>
+				    </td>
+				  	</tr>
 
-		<ul>
-			<% @repos_data.each do |repo| %>
-			  <li> <%= repo['name'] %> </li>
-			<% end %>
-		</ul>
+
+				  </table>
+			  	</div>
+		    <!-- </form> -->
+	  	</div>
+
+	</nav>
+
+	  	<hr />
+
+
+			<h1>Hello <%= @profile_data['name'] %></h1>
+
+			<img src='<%= @profile_data["avatar_url"] %>' />
+
+			<ul>
+				<% @repos_data.each do |repo| %>
+				  <li> <%= repo['name'] %> </li>
+				<% end %>
+			</ul>
 
 	</body>
 </html>

@@ -2,7 +2,7 @@ require 'open-uri'
 require 'JSON'
 
 class Context
-  USERNAME    = (raise 'No name given. Put your github username on line 5 of lib/context.rb') #'YOUR_GITHUB_USERNAME_HERE'
+  USERNAME    = ('rcantu1234') #'YOUR_GITHUB_USERNAME_HERE'
   PROFILE_URL = "https://api.github.com/users/#{USERNAME}"
   REPOS_URL   = "https://api.github.com/users/#{USERNAME}/repos?sort=updated"
 
@@ -10,8 +10,8 @@ class Context
     case data_src
     when :static
       begin
-        @profile_data = JSON.parse(open('profile.json'))
-        @repos_data   = JSON.parse(open('repos.json'))
+        @profile_data = JSON.parse(open('profile.json').read)
+        @repos_data   = JSON.parse(open('repos.json').read)
       rescue StandardError => error
         if error.message.scan(/[a-z]+\.json/).first == 'profile.json'
           STDERR.puts "No profile data given. go to #{PROFILE_URL} and paste the response here"
@@ -27,7 +27,7 @@ class Context
     else
       raise ArgumentError, "#{data_src} is not a valid data_src"
     end
-    @name = @profile_data['name']
+    # @name = @profile_data["name"]
   end
 
   def get_binding

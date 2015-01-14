@@ -1,4 +1,23 @@
-.foo .bar {
-  width: none; }
+.form-control {
+  width: 20em;
+  padding-top: .10em;
+  top: 30px; }
+
+a {
+  margin: 45px; }
+
+.change {
+  list-style-type: none;
+  margin: auto;
+  font-size: 100%;
+  float: right;
+  margin: auto; }
+
+.change li {
+  display: inline; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
 
 /*# sourceMappingURL=style.css.map */
