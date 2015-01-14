@@ -24,7 +24,6 @@
 }
 
 .list-padding li {
-    padding-top: px;
     padding-bottom: 10px;
     padding-right: -5px;
     font-size: 13px;
@@ -37,6 +36,12 @@
     display: inline;
     float: right;
     padding-bottom: 50px;
+    margin-top: -30px;
+    margin-right: 200px;
+}
+
+.logos {
+    width: 100px;
 }
 
 .list-padding li a {
@@ -47,8 +52,3 @@ li {
     list-style: none;
 }
 
-
-// .nav_height {
-//     display:inline;
-//     padding-left: 100px;
-// }

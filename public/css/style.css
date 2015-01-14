@@ -20,7 +20,6 @@
   margin-top: -3px; }
 
 .list-padding li {
-  padding-top: px;
   padding-bottom: 10px;
   padding-right: -5px;
   font-size: 13px;
@@ -31,7 +30,12 @@
 .logo2 {
   display: inline;
   float: right;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: -30px;
+  margin-right: 200px; }
+
+.logos {
+  width: 100px; }
 
 .list-padding li a {
   color: black; }
