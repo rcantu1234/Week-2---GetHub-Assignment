@@ -7,7 +7,7 @@
 .search {
     position: relative;
     margin-left: 100px;
-    margin-top: -29px;
+    margin-top: -30px;
     margin-bottom: 15px;
     clear: both;
     float: left;
@@ -20,6 +20,7 @@
     float: left;
     margin-left: 25px;
     padding-top: 5px;
+    padding-bottom: 20px;
     margin-top: -3px;
 }
 
@@ -37,11 +38,18 @@
     float: right;
     padding-bottom: 50px;
     margin-top: -30px;
-    margin-right: 200px;
+    margin-right: 400px;
 }
 
-.logos {
-    width: 100px;
+.hr-align {
+    float: left;
+    width: 60px;
+    margin-top: 1%;
+    padding-right: 10%;
+}
+
+.email-format {
+    margin-top: -25px;
 }
 
 .list-padding li a {
