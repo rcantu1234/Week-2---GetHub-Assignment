@@ -15,8 +15,6 @@
 			  	<a href="#"><span class="octicon octicon-octoface logo1" ></span></a>
   			  	<input type="email" class="form-control search" id="exampleInputEmail1" placeholder="Search GitHub">
 			</div>
-			  
-			  	
 
 			  	<div>
 				    <ul class="list-padding">
@@ -38,8 +36,7 @@
 		</div>
 	</nav>
 
-	  	<hr width="100%"/>
-
+	  	<hr class="hr-format" width="100%"/>
 
 			<h1>Hello <%= @profile_data['name'] %></h1>
 
@@ -63,13 +60,10 @@
 			</div>
 
 			<br />
-
-			<!-- <ul>
+			<ul>
 				<% @repos_data.each do |repo| %>
 				  <li> <%= repo['name'] %> </li>
 				<% end %>
-			</ul> -->
-		<!-- </div> -->
-
+			</ul>
 	</body>
 </html>

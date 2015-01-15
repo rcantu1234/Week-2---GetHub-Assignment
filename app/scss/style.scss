@@ -7,11 +7,12 @@
 .search {
     position: relative;
     margin-left: 100px;
-    margin-top: -30px;
-    margin-bottom: 15px;
+    margin-top: -33px;
+    margin-bottom: 20px;
     clear: both;
     float: left;
-    height: 30px;
+    height: 25px;
+    width: 23em;
 
 }
 
@@ -39,6 +40,15 @@
     padding-bottom: 50px;
     margin-top: -30px;
     margin-right: 400px;
+    color: black;
+}
+
+.logo2 a {
+    color: black;
+}
+
+.hr-format {
+    margin-top: -0.08em;
 }
 
 .hr-align {
