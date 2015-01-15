@@ -2,16 +2,18 @@
 <html>
 	<head>
 		<link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet'>
-		<link href="css/style.css" rel='stylesheet'>
 		<link href="../octicons/octicons.css" rel="stylesheet">
+		<link href="css/style.css" rel='stylesheet'>
+
 	</head>
 	<body style="margin-left: 25px;">
 
-	<br />
+	<!-- <br /> -->
 
-	<nav class="nav_height" style="color: brown">
-	    <div class="center">
-	    	<div class="image-format">
+<hr />
+	<nav>
+	    <div>
+	    	<div>
 			  	<a href="#"><span class="octicon octicon-octoface logo1" ></span></a>
   			  	<input type="email" class="form-control search" id="exampleInputEmail1" placeholder="Search GitHub">
 			</div>
@@ -38,7 +40,12 @@
 
 	  	<hr class="hr-format" width="100%"/>
 
+	  	<!-- <div> -->
 			<h1>Hello <%= @profile_data['name'] %></h1>
+
+		    <div class="contribution-format">Contributions</div>
+
+		    <div class="popular-format">Popular Repositories</div> 
 
 			<a href="#"><img src='<%= @profile_data["avatar_url"] %>' width="<%= 200 %>" height="<% 200 %>"/></a>
 
@@ -59,11 +66,27 @@
 				<span class="octicon octicon-clock">Joined on Jan 4, 2015</span>
 			</div>
 
-			<br />
-			<ul>
-				<% @repos_data.each do |repo| %>
-				  <li> <%= repo['name'] %> </li>
-				<% end %>
-			</ul>
+			<hr class="hr-align" />
+
+			<div class="zero-format">
+					<a href="#" alt="first-zero">0</a>
+					<a href="#" alt="second-zero">0</a>
+					<a href="#" alt="third-zero">0</a>
+			</div>
+
+			<hr class="hr-align" />
+
+			<!-- <br /> -->
+
+			<div class="repository-format">
+				<ul>
+					<li>
+					<% @repos_data.each do |repo| %>
+					  <li> <%= repo['name'] %> </li>
+					  <li><hr class="horizontal"></li>
+					<% end %>
+				</ul>
+			</div>
+		<!-- </div> -->
 	</body>
 </html>

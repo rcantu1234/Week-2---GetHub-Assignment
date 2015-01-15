@@ -37,6 +37,18 @@
   margin-right: 400px;
   color: black; }
 
+.repository-format {
+  color: blue;
+  display: inline;
+  float: right;
+  margin-right: 60%;
+  margin-top: -20em;
+  font-size: 1.5em; }
+
+hr.horizontal {
+  width: 300%;
+  border: 1px solid black; }
+
 .logo2 a {
   color: black; }
 
@@ -48,6 +60,24 @@
   width: 60px;
   margin-top: 1%;
   padding-right: 10%; }
+
+.zero-format {
+  font-size: 30px;
+  margin-top: 1.1em;
+  margin-right: 44.9em;
+  margin-left: 0.01em;
+  padding-left: 0em; }
+
+.contribution-format {
+  margin-left: 16em;
+  font-size: 1.5em; }
+
+.popular-format {
+  margin-left: 16em;
+  font-size: 1.5em;
+  border-style: 1px solid;
+  margin-right: 29%;
+  font-weight: bold; }
 
 .email-format {
   margin-top: -25px; }
