@@ -34,14 +34,12 @@
   float: right;
   padding-bottom: 50px;
   margin-top: -30px;
-  margin-right: 400px;
-  color: black; }
+  margin-right: 400px; }
 
 .logo6 {
   margin-left: 16em; }
 
 .repository-format {
-  color: blue;
   display: inline;
   float: right;
   margin-right: 69.7%;
@@ -101,7 +99,7 @@ hr.horizontal {
 
 .github-format {
   margin-left: 69em;
-  margin-top: -1.4em; }
+  margin-top: -1.0em; }
 
 .star1 {
   margin-right: 30em;
@@ -133,11 +131,11 @@ hr.horizontal {
   margin-top: -4.5em;
   float: right; }
 
-.logo6 a {
+.links-format a {
   color: black; }
 
 .hr-format {
-  margin-top: -0.08em; }
+  margin-top: -0.075em; }
 
 .hr-align {
   float: left;
